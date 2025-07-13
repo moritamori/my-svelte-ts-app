@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "My Svelte App",
+    "version": "1.0.0",
+    "description": "My Svelte App",
+    "permissions": ["storage"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "My Svelte App"
+    },
+    "background": {
+      "service_worker": "/background.js"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+} 
